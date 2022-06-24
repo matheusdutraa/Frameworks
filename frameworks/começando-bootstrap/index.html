@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+    .card {
+        box-sizing: border-box;
+        width: 20%;
+        position: relative;
+        float: left;
+
+        border: solid 1px green;
+    }
+
+    .card img {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* condicional 
+    será aplicado quando a resolucao for de no máximo 800px*/
+    @media screen and (max-width: 800px) {
+
+        body {
+            background: olivedrab;
+        }
+        .card {
+            width: 50%;
+        }
+    }
+
+    @media screen and (max-width: 400px) {
+
+        body {
+            background: rgb(26, 72, 159);
+        }
+        .card {
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 1000px) {
+        .teste {
+            display: none;
+        }
+        
+    }
+
+
+</style>
+
+<body>
+    
+    <header>
+        <h1>ROBÔGURINHAS</h1>
+    </header>
+
+    <span class="teste">
+        só deve aparecer em telas grandes
+    </span>
+
+    <div class="container">
+
+        <div class="card">
+            <img src="https://robohash.org/123?set=set1" alt="">
+        </div>        
+        
+        <div class="card">
+            <img src="https://robohash.org/321?set=set1" alt="">
+        </div>
+
+        <div class="card">
+            <img src="https://robohash.org/123?set=set1" alt="">
+        </div>        
+        
+        <div class="card">
+            <img src="https://robohash.org/321?set=set1" alt="">
+        </div>
+
+        <div class="card">
+            <img src="https://robohash.org/123?set=set1" alt="">
+        </div>        
+        
+        <div class="card">
+            <img src="https://robohash.org/321?set=set1" alt="">
+        </div>
+
+        <div class="card">
+            <img src="https://robohash.org/123?set=set1" alt="">
+        </div>        
+        
+        <div class="card">
+            <img src="https://robohash.org/321?set=set1" alt="">
+        </div>
+
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <title>Album de robôs</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+        .container {
+            width: 90%;
+            display  : flex;
+            flex-wrap: wrap;
+            justify-content: center; 
+            margin: 0 auto;
+        }
+        
+        .card {
+            /*flex: 1 1 25%;*/
+            flex: 1 1 auto;
+            width: 15rem;
+            box-sizing: border-box;
+            border : solid 1px #ebed76;
+            text-align: center;
+        }
+
+        .card img {
+            width: 90%;
+            max-width: 90%;
+            margin: 0 auto;
+            height: auto;
+        }
+
+        @media screen and (max-width: 600px) {
+            body {
+                background: blue;
+            }
+            .card {
+                flex: 1 1 auto;
+                width: 100%;
+                background: red;
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="card">
+            <img src="https://picsum.photos/600/300/?random&1" alt="">
+        </div>
+
+        <div class="card">
+            <img src="https://picsum.photos/600/300/?random&2" alt="">
+        </div>
+
+        <div class="card">
+            <img src="https://picsum.photos/600/300/?random&3" alt="">
+        </div>
+
+
+        <div class="card">
+            <img src="https://picsum.photos/600/300/?random&4" alt="">
+        </div>
+
+
+        <div class="card">
+            <img src="https://picsum.photos/600/300/?random&5" alt="">
+        </div>
+
+
+        <div class="card">
+            <img src="https://picsum.photos/600/300/?random&6" alt="">
+        </div>
+
+        <div class="card">
+            <img src="https://picsum.photos/600/300/?random&7" alt="">
+        </div>
+
+        <div class="card">
+            <img src="https://picsum.photos/600/300/?random&8" alt="">
+        </div>
+    </div>
+    
+</body>
+</html>
+
