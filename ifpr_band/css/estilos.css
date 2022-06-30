@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+
+:root {
+  --cinza: #aaa;
+  --vermelha: #000000;
+  --vermelha-escura: #af303f;
+  --branca: #fff;
+  --luz: rgb(229, 255, 0);
+}
+
+body {
+  align-items: center;
+  background: url('https://images.unsplash.com/photo-1445375011782-2384686778a0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8YmFuZHxlbnwwfHwwfHw%3D&w=1000&q=80');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family: 'Montserrat', sans-serif;
+  min-height: 100vh;
+}
+
+h1 {
+  color: var(--branca);
+  margin: 20px;
+  font-size: 2rem;
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+.teclado {
+  background: linear-gradient(to bottom, #eeeeee 0%,#cccccc 100%);
+  border-radius: 4px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 10px;
+}
+
+.tecla {
+  background-color: var(--branca);
+  border-radius: 4px;
+  box-shadow: 3px 3px 0 var(--cinza);
+  color: var(--vermelha);
+  cursor: pointer;
+  height: 120px;
+  font-size: 1.75em;
+  font-weight: bold;
+  line-height: 120px;
+  text-align: center;
+  width: 120px;
+}
+
+.tecla.ativa,
+.tecla:active {
+  background-color: var(--vermelha);
+  border: 4px solid  var(--vermelha);
+  box-shadow: 3px 3px 0 var(--vermelha-escura) inset;
+  color: var(--branca);
+  outline: none;
+}
+
+.tecla.focus,
+.tecla:focus {
+  outline: none;
+  box-shadow: 1px 1px 10px var(--luz);
+}
+
+.tecla.active:focus,
+.tecla:active:focus {
+  box-shadow: 3px 3px 0 var(--vermelha-escura) inset, 1px 1px 10px var(--luz);
+}
+
+button {
+  --u:  1.85vmin;
+  --c1: #eacda5;
+  --c2: #62928c;
+  --c3: #cf2844;
+  --c4: #404355;
+  --c5: #331530;
+  --gp: 50%/ calc(var(--u) * 8.5) calc(var(--u) * 14.7);
+  height: 100vh;
+  background: 
+    conic-gradient(from 210deg at 23% 60%, var(--c3) 0 60deg, #fff0 0 100%) var(--gp), 
+    conic-gradient(from 90deg at 77% 60%, var(--c3) 0 60deg, #fff0 0 100%) var(--gp), 
+    conic-gradient(from 118deg at 50.5% 85%, var(--c2) 0 125deg, #fff0 0 100%) var(--gp), 
+    conic-gradient(from 30deg at 50% 50%, var(--c5) 0 30deg, var(--c2) 0 60deg, #fff0 0 120deg,  var(--c4) 0 150deg, var(--c5) 0 180deg, #fff0 0 241deg, var(--c2) 0 270deg, var(--c4) 0 300deg, #fff0 0 100%) var(--gp), 
+    linear-gradient(180deg, var(--c1) 0 10%, #fff0 0 100%) var(--gp), 
+    conic-gradient(from -30deg at 50% 33%, var(--c3) 0 60deg, #fff0 0 100%) var(--gp), 
+    var(--c1);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #002e37;
+}
+
+.line-group {
+  border-radius: 50%;
+  overflow: hidden;
+  max-width: 30vw;
+  max-height: 30vw;
+  width: 100%;
+}
+
+.line {
+  height: 2vw;
+  widht: 100%;
+  background: linear-gradient(-45deg, #ffeaf7, #fda4c3, #002e37);
+	background-size: 200% 200%;
+  animation: gradient 5s ease infinite alternate;
+}
+
+@for $i from 1 through 27 {
+  .v#{$i} { animation-delay: $i * 0.05s; }
+}
+
+@keyframes gradient {
+	0%   { background-position: 0% 50%; }
+	50%  { background-position: 100% 50%; }
+	100% { background-position: 0% 50%; }
+}
+
+h1 {
+  text-align: center;
+  color: transparent;
+  letter-spacing: .5rem;
+}
+
+.bg-gradient-one {
+  background: linear-gradient(to bottom left, cyan, violet);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
