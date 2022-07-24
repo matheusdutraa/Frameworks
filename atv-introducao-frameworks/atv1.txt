@@ -1,4 +1,4 @@
 1. O JavaScript pode ser usado tanto para aplicações Frontend quanto Backend. Faça
 uma breve pesquisa sobre qual o objetivo de se usar javascript em aplicações Frontend.
 
-Já que pode ser usado para as duas funções, isso torna muito útil para fazer uma padrozinação do código, ainda mais se o dev for full stack. Ele tem ótimas funcionalidades para pegar os elementos do código HTML, e só por não precisar usar o "$" em tudo, já acho muito superior ao PHP. 
+Já que pode ser usado para as duas funções, isso torna muito útil para fazer uma padrozinação do código, ainda mais se o dev for full stack. Ele tem ótimas funcionalidades para pegar os elementos do código HTML. No mais, eu aprendo com o tempo.  
