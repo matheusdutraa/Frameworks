@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Formulario</title>
+</head>
+<body>
+
+    <!-- 7. Faça um programa que valide um formulário de cadastro com os campos nome, senha
+e confirmação de senha. As regras de validação são:
+a) o campo de nome não pode ser vazio;
+b) o campo de senha não pode ter menos que 8 caracteres;
+c) os valores para os campos senha e confirmação de senha devem ser identicos; -->
+
+    <form class="formulario"> 
+        <p><strong>Formulário para Cadastro</strong></p>
+        
+        <div class="field">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome*" required>
+        </div>
+        
+        <div class="field">
+            <label for="email">E-Mail</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu E-Mail*" required>
+        </div>    <!-- Coloquei e-mail também, porque faz sentido ter. -->    
+              
+        <div class="field">
+            <label for="senha">Senha</label>
+            <input type="password" class="senha" id="senha" name="senha" placeholder="Digite sua Senha*" required>
+        </div>
+
+        <div class="field">
+            <label for="confirmacaosenha">Confirmação da Senha</label>
+            <input type="password" class="confirmacaosenha" id="confirmacaosenha" name="confirmacaosenha" placeholder="Confirme a senha*" required>
+        </div>
+        
+        <input onclick="verifica()" type="submit" onclick="verificaSenha()" name="acao" value="Enviar">
+    </form>
+</body>
+</html>

@@ -1,0 +1,3 @@
+1. O JavaScript pode ser usado tanto para aplicações Frontend quanto Backend. Faça
+uma breve pesquisa sobre qual o objetivo de se usar javascript em aplicações Frontend.
+
