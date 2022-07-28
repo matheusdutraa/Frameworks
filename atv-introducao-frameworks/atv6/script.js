@@ -19,7 +19,7 @@ function verifica(){
 
 }
 
-const cont = 0;
+var cont = 0;
 
 function darkmode(){
 
